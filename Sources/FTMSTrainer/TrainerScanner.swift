@@ -18,7 +18,7 @@ public final class TrainerScanner {
         self.manager = manager
     }
 
-    public func scan() -> Observable<[ConnectableTrainer]> {
+    public func scan() -> Observable<[ScannedPeripheral]> {
         manager.observeState()
             .startWith(manager.state)
             .filter {
@@ -31,7 +31,7 @@ public final class TrainerScanner {
                     UUIDs.fitnessMachineServiceUUID
                 ])
             }
-            .scan(into: [ConnectableTrainer](), accumulator: { (accumulator, peripheral) in
+            .scan(into: [ScannedPeripheral](), accumulator: { (accumulator, peripheral) in
                 if !accumulator.contains(where: {
                     $0.id == peripheral.id
                 }) {
