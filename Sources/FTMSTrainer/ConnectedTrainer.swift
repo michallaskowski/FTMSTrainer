@@ -16,7 +16,8 @@ private let logger = OSLog(subsystem: Bundle.main.bundleIdentifier!, category: "
 public struct BluetoothConnectedTrainer {
     let controlPoint: Characteristic
     let bikeData: Characteristic
-    let id: UUID
+
+    public let id: UUID
     private let disposeBag = DisposeBag()
 
     public init(peripheral: Peripheral, controlPoint: Characteristic, bikeData: Characteristic) {
