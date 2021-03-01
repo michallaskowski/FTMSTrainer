@@ -1,7 +1,3 @@
-//
-//  ConnectedTrainer.swift
-//  WatchTrainer WatchKit Extension
-//
 //  Created by Laskowski, Michal on 06/11/2020.
 //
 
@@ -13,7 +9,7 @@ import FTMSModels
 
 private let logger = OSLog(subsystem: Bundle.main.bundleIdentifier!, category: "FTMSBluetoothCommands")
 
-public struct BluetoothConnectedTrainer {
+public struct FTMSConnectedTrainer {
     let controlPoint: Characteristic
     let bikeData: Characteristic
 

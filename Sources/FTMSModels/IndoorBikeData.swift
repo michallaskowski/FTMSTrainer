@@ -1,7 +1,3 @@
-//
-//  IndoorBikeData.swift
-//  WatchTrainer
-//
 //  Created by Laskowski, Michal on 07/11/2020.
 //
 

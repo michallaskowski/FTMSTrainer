@@ -8,7 +8,7 @@ import FTMSModels
 
 public protocol ConnectableTrainer: AnyObject {
     var name: String? { get }
-    func establishConnection() -> Observable<BluetoothConnectedTrainer>
+    func establishConnection() -> Observable<FTMSConnectedTrainer>
     var id: UUID { get }
 }
 
@@ -22,7 +22,7 @@ extension ScannedPeripheral: ConnectableTrainer {
         advertisementData.localName
     }
 
-    public func establishConnection() -> Observable<BluetoothConnectedTrainer> {
+    public func establishConnection() -> Observable<FTMSConnectedTrainer> {
         peripheral.establishConnection()
             .flatMap { (peripheral: Peripheral) in
                 peripheral.discoverServices([UUIDs.fitnessMachineServiceUUID])
@@ -44,9 +44,9 @@ extension ScannedPeripheral: ConnectableTrainer {
                         return Single.zip(characteristics[0].discoverDescriptors(),
                                           .just(characteristics))
                     }.map { (_: [Descriptor], characteristics: [Characteristic]) in
-                        BluetoothConnectedTrainer(peripheral: peripheral,
-                                                  controlPoint: characteristics.first(where: { $0.uuid ==  UUIDs.fitnessMachineCharacteristicControlPointId})!,
-                                                  bikeData: characteristics.first(where: { $0.uuid == UUIDs.fitnessMachineCharacteristicIndoorBikeDataId})!)
+                        FTMSConnectedTrainer(peripheral: peripheral,
+                                             controlPoint: characteristics.first(where: { $0.uuid ==  UUIDs.fitnessMachineCharacteristicControlPointId})!,
+                                             bikeData: characteristics.first(where: { $0.uuid == UUIDs.fitnessMachineCharacteristicIndoorBikeDataId})!)
                     }
             }
     }

@@ -1,7 +1,3 @@
-//
-//  Command.swift
-//  WatchTrainer WatchKit Extension
-//
 //  Created by Laskowski, Michal on 01/11/2020.
 //
 

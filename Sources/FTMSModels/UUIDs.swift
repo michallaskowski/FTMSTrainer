@@ -1,7 +1,3 @@
-//
-//  File.swift
-//  
-//
 //  Created by Laskowski, Michal on 26/02/2021.
 //
 

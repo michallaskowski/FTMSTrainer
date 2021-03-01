@@ -3,10 +3,7 @@ import XCTest
 
 final class FTMSTrainerTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(FTMSTrainer().text, "Hello, World!")
+        // TODO
     }
 
     static var allTests = [

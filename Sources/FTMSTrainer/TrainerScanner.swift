@@ -1,7 +1,3 @@
-//
-//  TrainerScanner.swift
-//  WatchTrainer WatchKit Extension
-//
 //  Created by Laskowski, Michal on 31/10/2020.
 //
 
