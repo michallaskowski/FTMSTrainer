@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "RxBluetoothKit",
-        "repositoryURL": "https://github.com/Polidea/RxBluetoothKit",
+        "repositoryURL": "https://github.com/i-mobility/RxBluetoothKit",
         "state": {
           "branch": null,
-          "revision": "20a0736b5f53dedd291254236a99509d2be1855f",
-          "version": "6.0.0"
+          "revision": "a228044eca4c7108fa7c7ff81da04083f68568c3",
+          "version": "7.0.2"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
         "state": {
           "branch": null,
-          "revision": "002d325b0bdee94e7882e1114af5ff4fe1e96afa",
-          "version": "5.1.1"
+          "revision": "b4307ba0b6425c0ba4178e138799946c3da594f8",
+          "version": "6.5.0"
         }
       }
     ]

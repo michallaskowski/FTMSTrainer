@@ -16,7 +16,7 @@ let package = Package(
             targets: ["FTMSModels"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Polidea/RxBluetoothKit", from: "6.0.0")
+        .package(url: "https://github.com/i-mobility/RxBluetoothKit", from: "7.0.0")
     ],
     targets: [
         .target(
